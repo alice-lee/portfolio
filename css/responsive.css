@@ -13,6 +13,9 @@
 		justify-content: flex-start;
 		margin-top: 175px;
 	}
+	.worklist .works-title {
+		margin-top: 0 !important;
+	}
 	.works h1 {
 		display: none;
 	}
@@ -27,5 +30,22 @@
 	}
 	.graphic-cont img {
 		max-height: 100px;
+	}
+	.visual-title {
+		margin-bottom: 0;
+	}
+	.visual-title h2 {
+		font-size: 2rem;
+	}
+	.port-show {
+		width: 85.5%;
+	}
+	.port-show h2 {
+		margin: 0;
+	}
+	.work-visual {
+		width: 85.5%;
+		margin: 3rem auto;
+		padding: 6rem 0 6rem 0;
 	}
 }
