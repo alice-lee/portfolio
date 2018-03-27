@@ -1,0 +1,184 @@
+.works {
+	background: rgba(255, 255, 255, 1);
+	position: absolute;
+	left: 50%;
+	width: 30%;
+	height: 100vh;
+	z-index: 999;
+	/* transition: cubic-bezier(0.2, 0.9, 0.3, 1.1) all .6s; */
+	transition: cubic-bezier(0.645, 0.045, 0.355, 1) all .6s;
+	transform: skewX(-10deg);
+	backface-visibility: hidden;
+	overflow: hidden;
+}
+.works:hover {
+	width: 42%;
+}
+
+.works-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.works:hover h1 {
+	font-size: 4.5rem;
+}
+.works-chi {
+	font-size: 1.2rem;
+	text-align: right;
+	letter-spacing: 1.6rem;
+}
+
+/* 內容切換效果 */
+.worklist, .worklist:hover {
+	width: 90% !important;
+	left: 8% !important;
+	transform: skewX(0);
+	overflow: scroll;
+	/* transition: ease-out .5s; */
+}
+
+.works h1 {
+	font-size: 5rem;
+	word-break: break-all;
+	padding: 0 3.5rem;
+	margin: 1.5rem 0;
+	color: #969696;
+	transition: all ease .6s;
+}
+.works-inside {
+	height: 25vh;
+	flex-direction: column-reverse;
+	transition: all ease-in-out .8s;
+}
+.works-inside > h1 {
+    /* font-size: 2rem !important; */
+    display: none;
+	/* animation-name: fadeOut;
+	animation-duration: 1s; */
+}
+.works-inside .works-chi {
+    display: none;
+	/* letter-spacing: 1.2rem; */
+}
+.works-inside > .btn {
+	/* display: none; */
+	/* position: fixed !important; */
+	transform: skewX(0);
+	transform:rotate(180deg);
+	background-size: 30%;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	text-indent: -9999px;
+	padding: 0;
+}
+.works-inside > .btn::after {
+	background-size: 40%;
+	background-position: center;
+}
+
+.portfolio {
+	/* display: none; */
+	/* transform: skewX(10deg); */
+}
+.port-show {
+	display: none;
+	position: relative;
+	width: 74.5%;
+	margin: auto;
+	animation-name: fadeIn;
+	animation-duration: 1.5s;
+	font-size: 1.2rem;
+	line-height: 3rem;
+	letter-spacing: 2px;
+}
+
+.work-graphic {
+    /* display: none; */
+    /* background: #e26288; */
+    font-size: 2.4rem;
+    animation-name: fadeIn;
+	animation-duration: 1.5s;
+}
+
+.port-show h2 {
+	color: #6f6f6f;
+    padding: 0;
+	margin: 1rem 0;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+}
+.work-web-outer {
+	position: relative;
+}
+.work-web {
+	position: relative;
+	background-image: url(../images/mac.png);
+	background-size: 100%;
+	width: 92%;
+	
+}
+.work-web:hover {
+	z-index: 10;
+}
+.work-web:hover ~ .work-web-phone {
+	opacity: .5;
+}
+.work-web-phone {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-image: url(../images/smart-phone.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 28.7%;
+    height: 72%;
+	z-index: 5;
+	transition: opacity ease .2s;
+}
+.work-web-smart {
+	display: block;
+    width: 93.8%;
+	height: 85%;
+    margin: 14% auto auto auto;
+	overflow: scroll;
+	font-size: 60%;
+	line-height: initial;
+}
+.work-web-box {
+	display: block;
+    width: 93.8%;
+	height: 64%;
+    margin: 3% auto auto auto;
+    overflow: scroll;
+}
+.work-web-box img, .work-web-smart img {
+	width: 100%;
+}
+.work-web-1 {
+	width: 100%;
+	padding-bottom: 79%;
+	position: relative;
+}
+.work-web-1 div {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.work-web-title {
+	color: #fff;
+	background: #b7a5fd;
+	display: inline-block;
+	transform: skewX(-15deg);
+	padding: 0 15px;
+	margin-bottom: 1.5rem;
+	box-shadow: 50px 10px 0px 0px rgb(242, 242, 242);
+}
+.work-web-title:not(:first-child) {
+	margin-top: 2rem;
+}
