@@ -8,7 +8,7 @@ ul {
 	margin: 0;
 }
 li {
-	width: 100%;
+	width: calc(100% - 4rem);
 	display: block;
 	padding: 2rem;
 	list-style: none;
