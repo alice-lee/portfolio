@@ -1,0 +1,21 @@
+body {
+	font: 16px/1.25 "Microsoft JhengHei",Verdana;
+	padding: 0;
+	margin: 0;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+li {
+	width: 100%;
+	display: block;
+	padding: 2rem;
+	list-style: none;
+}
+li:hover {
+	cursor: pointer;
+}
+li.actived {
+	height: 100vh;
+}
